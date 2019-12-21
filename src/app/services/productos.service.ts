@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Producto } from '../interfaces/producto.interface';
-import { setTimeout } from 'timers';
 
 
 @Injectable({
@@ -55,7 +54,7 @@ export class ProductosService {
   }
 
   private filtrarProductos( termino: string){
-    console.log(this.productos);
+    // console.log(this.productos);
     this.productosFiltrado = [];
 
     termino = termino.toLocaleLowerCase();
